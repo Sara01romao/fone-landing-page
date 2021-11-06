@@ -10,21 +10,18 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Icons Font Awesome -->
-    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Shop</title>
 </head>
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-between borda">
-            <a class="navbar-brand" href="#">Navbar</a>
+        <nav class="navbar menu navbar-expand-lg  d-flex justify-content-between ">
+            <a class="navbar-brand" href="#"><img src="./assets/logo.svg" alt="logo Shop" class="logo"></a>
 
-           
-           
-          
-            <div class="collapse navbar-collapse borda " id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto my-0 pb-1">
+                <li class="nav-item ">
                   <a class="nav-link" href="#">Home</a>
                 </li>
                 <li class="nav-item">
@@ -41,12 +38,13 @@
             </div>
 
             
-            <div class="borda d-flex">
+            <div class="d-flex align-items-center iconsMenu">
                 <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
                 <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
-                <a class="nav-link" href="#"><i class="fas fa-bars"></i></a>
+                <a href="#" class="d-none d-lg-block navbar-toggler"> <i class="fas fa-bars"></i></a>
+               
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                  <i class="fas fa-bars"></i>
                 </button>
             </div>
             
