@@ -68,7 +68,6 @@ body {
   text-align: center;
   font-size: 18px;
   background: #fff;
-  border: 1px solid red;
 
   /* Center slide text vertically */
   display: -webkit-box;
@@ -146,6 +145,7 @@ main h1 {
   margin-left: 20px;
   font-size: 14px;
   font-weight: bold;
+  height: 25px;
 }
 
 .infoTxt {
@@ -174,15 +174,52 @@ main h1 {
   transition: 0.2s;
 }
 
-.finalInfo{
+.finalInfo {
   max-width: 1200px;
   width: 90%;
-  margin: 80px auto 0px;
- 
-  background-color: #fffbe4;
+  margin: 50px auto 0px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  background-color: #fdefdc;
 }
 
-.finalInfo .item p{
+.finalInfo .item p {
   width: 200px;
-  font-size: 16px;  
+  font-size: 16px;
+}
+
+@media screen and (max-width: 425px) {
+  .logo {
+    width: 70px;
+  }
+
+  main {
+    height: 700px;
+  }
+
+  main h1 {
+    font-size: 25px;
+  }
+
+  .swiper-slide {
+    bottom: 100px;
+  }
+
+  .swiper-slide img {
+    width: 60%;
+  }
+
+  .info {
+    position: relative;
+    z-index: 1;
+    bottom: 200px;
+  }
+
+  .preco {
+    font-size: 26px;
+  }
+
+  .finalInfo {
+    margin: 0px auto 0px;
+  }
 }
