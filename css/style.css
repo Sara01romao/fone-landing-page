@@ -1,195 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
-
-
-:root{
-
---vermelho: #ca3b3a;
---preto: #161616;
---cinza: #707070;
-
+:root {
+  --vermelho: #ca3b3a;
+  --preto: #161616;
+  --cinza: #707070;
 }
 
-body{
-    
-    font-family: 'Montserrat', sans-serif;
+body {
+  font-family: "Montserrat", sans-serif;
 }
 
-.container{
-    max-width: 1400px !important;
+.container {
+  max-width: 1400px !important;
 }
 
-.borda{
-    border: 1px solid red;
-  
+.borda {
+  border: 1px solid red;
 }
-.navbar a{
-    color: var(--preto);
-}
-
-
-
-.navbar ul li a{
-    font-size: 18px;
-    display: flex;
-    flex-direction: column;
-    color: var(--preto);
-    padding-bottom: 0;
+.navbar a {
+  color: var(--preto);
 }
 
-.navbar ul li a::after{
-    content: "";
-    background-color: var(--vermelho);
-    height: 3px;
-    width: 0%;
-    transition: width 1s;
-   
-    
+.navbar ul li a {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  color: var(--preto);
+  padding-bottom: 0;
 }
 
-.navbar ul li a:hover::after{
-    content: "";
-    background-color: var(--vermelho);
-    height: 4px;
-    width: 100%;
-   
-    
+.navbar ul li a::after {
+  content: "";
+  background-color: var(--vermelho);
+  height: 3px;
+  width: 0%;
+  transition: width 1s;
 }
 
-.iconsMenu a:hover{
-    color: var(--vermelho);
-}
-.logo{
-    width: 110px;
-    height: 70px;
-    
-    
+.navbar ul li a:hover::after {
+  content: "";
+  background-color: var(--vermelho);
+  height: 4px;
+  width: 100%;
 }
 
-
-
+.iconsMenu a:hover {
+  color: var(--vermelho);
+}
+.logo {
+  width: 110px;
+  height: 70px;
+}
 
 .swiper {
-    width: 100%;
-    height: 500px;
-  }
-
-  .swiper-pagination-vertical.swiper-pagination-bullets, .swiper-vertical > .swiper-pagination-bullets {
-    left: 10px;
-    top: 50%;
-    transform: translate3d(0px, -50%, 0px);
+  width: 100%;
+  height: 500px;
 }
 
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    border: 1px solid red;
-    
-
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-  }
-
-  .swiper-slide img {
-    display: block;
-    width: 45%;
-    height: 100%;
-    object-fit: contain;
-    
-  }
-
-  .swiper-pagination{
-      width: 10px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-      height: 60%;
-  }
-
-  .swiper-pagination::after, .swiper-pagination::before{
-      content: "";
-      background-color: #dadada ;
-      width: 4px;
-      height: 80px;
-      border-radius: 5px;
-      position: relative;
-  }
-
-  .swiper-pagination-bullet-active{
-      background-color:var(--vermelho) !important;
-  }
-
-  main{
-      max-width: 1400px;
-      margin: 0 auto;
-  }
-
-  main h1{
-      color: var(--vermelho);
-      font-size: 30px;
-      font-weight: bold;
-  }
-  .info p{
-     
-    font-weight: bold;
-    margin:0px;
+.swiper-pagination-vertical.swiper-pagination-bullets,
+.swiper-vertical > .swiper-pagination-bullets {
+  left: 10px;
+  top: 50%;
+  transform: translate3d(0px, -50%, 0px);
 }
 
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  border: 1px solid red;
 
-  .estrelas{
-      color: var(--vermelho);
-  }
-  .iconsStar{
-      margin-top: 10px;
-      margin-bottom: 20px;
-  }
-
-  .estrelas i {
-      margin-right: 5px;
-  }
-
-  
-  .estrelas small{
-      margin-left: 20px;
-      font-size: 14px;
-      font-weight: bold;
-  }
-
-  .infoTxt{
-    color:rgb(192, 192, 192);
-    margin-bottom: 20px !important;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
 }
 
-.preco{
-    font-weight: bold;
+.swiper-slide img {
+  display: block;
+  width: 45%;
+  height: 100%;
+  object-fit: contain;
 }
 
-.info button{
-    background-color: var(--vermelho);
-    width: 150px;
-    height: 40px;
-    font-size: 14px;
-    font-weight: bold;
-    color: white;
-    border: none;
-    padding: 15px;
-    cursor: pointer;
+.swiper-pagination {
+  width: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 60%;
 }
 
-.info button:hover{
-    background-color: #850d0d;
-    transition: 0.2s;
+.swiper-pagination::after,
+.swiper-pagination::before {
+  content: "";
+  background-color: #dadada;
+  width: 4px;
+  height: 80px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--vermelho) !important;
+}
+
+main {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+main h1 {
+  color: var(--vermelho);
+  font-size: 30px;
+  font-weight: bold;
+}
+.info p {
+  font-weight: bold;
+  margin: 0px;
+}
+
+.estrelas {
+  color: var(--vermelho);
+}
+.iconsStar {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.estrelas i {
+  margin-right: 5px;
+}
+
+.estrelas small {
+  margin-left: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.infoTxt {
+  color: rgb(192, 192, 192);
+  margin-bottom: 20px !important;
+}
+
+.preco {
+  font-weight: bold;
+}
+
+.info button {
+  background-color: var(--vermelho);
+  width: 150px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.info button:hover {
+  background-color: #850d0d;
+  transition: 0.2s;
+}
+
+.finalInfo{
+  max-width: 1200px;
+  width: 90%;
+  margin: 80px auto 0px;
+ 
+  background-color: #fffbe4;
+}
+
+.finalInfo .item p{
+  width: 200px;
+  font-size: 16px;  
 }
